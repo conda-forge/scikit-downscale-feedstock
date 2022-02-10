@@ -1,5 +1,5 @@
 {% set name = "scikit-downscale" %}
-{% set version = "0.0.2" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 07bcfb38ef7b53004cdaba6d93d6d771795c3fee7ba4e311025c1a42af38a996
+  sha256: 2b9c7e2321b29e696e3e6825552b55f0aceca29e7f6282f998af9c8aee3f744e
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ test:
     - skdownscale
 
 about:
-  home: https://github.com/jhamman/scikit-downscale
+  home: https://github.com/pangeo-data/scikit-downscale
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
