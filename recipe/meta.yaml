@@ -1,5 +1,5 @@
 {% set name = "scikit-downscale" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2b9c7e2321b29e696e3e6825552b55f0aceca29e7f6282f998af9c8aee3f744e
+  sha256: d7e93b6b11cd4dddf971a05a4f6f634a7bff0a3cf85244e68bfa3f4460663a4c
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.6
-    - xarray >=0.15
+    - xarray >=0.16
     - scikit-learn >=0.21
 
 test:
