@@ -1,5 +1,5 @@
 {% set name = "scikit-downscale" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d7e93b6b11cd4dddf971a05a4f6f634a7bff0a3cf85244e68bfa3f4460663a4c
+  sha256: 2b49b38a1b1438d6d9915617ebc1d270144dc82037a3418580e10875015217a0
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Statistical downscaling and postprocessing models for climate and weather model simulations.'
+  summary: Statistical downscaling and postprocessing models for climate and weather model simulations.
   description: |
     Scikit-downscale is a toolkit for statistical downscaling usising Xarray. It is meant to
     support the development of new and existing downscaling methods in a common framework. It
