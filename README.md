@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-downscal
 
 Summary: Statistical downscaling and postprocessing models for climate and weather model simulations.
 
-Development: https://github.com/jhamman/scikit-downscale
+Development: https://github.com/pangeo-data/scikit-downscale
 
 Documentation: https://scikit-downscale.readthedocs.io
 

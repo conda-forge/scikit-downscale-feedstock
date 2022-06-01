@@ -1,5 +1,5 @@
 {% set name = "scikit-downscale" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a2980e381297866abb007ec70a74b343af58e58ac5d1ba43a54249ce450046e0
+  sha256: 316d33320ad94374d8ffd1f699b5ac490cbe2f67d9c768c2aedd26bac21608fe
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.8
     - xarray >=0.16
     - scikit-learn >=0.21
 
@@ -40,7 +40,7 @@ about:
     implements a fit/predict API that accepts Xarray objects, similiar to Python’s Scikit-Learn,
     for building a wide range of statitical downscaling models.
   doc_url: https://scikit-downscale.readthedocs.io
-  dev_url: https://github.com/jhamman/scikit-downscale
+  dev_url: https://github.com/pangeo-data/scikit-downscale
 
 extra:
   recipe-maintainers:
